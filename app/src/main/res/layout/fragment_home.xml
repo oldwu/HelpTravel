@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/include_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/toHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="帮助"
+            android:textSize="15sp"
+            android:textColor="@color/text_or_icons"
+            android:background="@drawable/info_type_action_bg_seletor"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/forHelp"
+            android:text="求助"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/info_type_action_bg_seletor"
+            android:textColor="@color/text_or_icons"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/sw_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/info_rc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:background="@color/primary"
+            android:src="@android:drawable/ic_input_add" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

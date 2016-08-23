@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/select_from_file"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_action_bg_seletor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="从文件选择"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/select_from_camera"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_action_bg_seletor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="用相机拍照"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

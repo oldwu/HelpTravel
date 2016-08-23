@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/me"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_bar" />
+
+    <RelativeLayout
+        android:id="@+id/avatar_me_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/layout_action_bg_seletor"
+        android:clickable="true"
+        android:onClick="onSetAvatar">
+
+
+        <ImageView
+            android:id="@+id/avatar_me_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/default_avator" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="头像" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/nick_me_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/layout_action_bg_seletor"
+        android:clickable="true"
+        android:onClick="onSetNick">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="昵称" />
+
+        <TextView
+            android:id="@+id/nickname_me_tv"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:text="" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/gender_me_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/layout_action_bg_seletor"
+        android:clickable="true"
+        android:onClick="onSetgender">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="性别" />
+
+        <TextView
+            android:id="@+id/gender_me_tv"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:text="男" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_me_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/layout_action_bg_seletor"
+        android:clickable="true"
+        android:onClick="onSetArea">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="所在地区" />
+
+
+        <TextView
+            android:id="@+id/area_me_tv"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:text="江苏省 镇江市" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/birth_me_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/layout_action_bg_seletor"
+        android:clickable="true"
+        android:onClick="onSetBirth">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="生日" />
+
+        <TextView
+            android:id="@+id/birth_me_tv"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:text="2016-05-10" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/signature_me_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/layout_action_bg_seletor"
+        android:clickable="true"
+        android:onClick="onSetSignature">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="个性签名" />
+
+        <TextView
+            android:id="@+id/signature_me_tv"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:gravity="right|center"
+            android:text="个性签名未填写" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

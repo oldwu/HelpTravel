@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HelpTravel</string>
+
+    <string name="recorder_normal">按下 说话</string>
+    <string name="recorder_recording">松开 结束</string>
+    <string name="recorder_want_cancel">松开手指，取消发送</string>
+    <string name="picture">照片</string>
+    <string name="camera">拍摄</string>
+    <string name="location">位置</string>
+    <string name="long_press_tospeak">长按说话</string>
+</resources>
